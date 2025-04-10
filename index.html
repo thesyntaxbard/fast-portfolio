@@ -40,6 +40,13 @@
         delay: anime.stagger(200)
       });
     });
+    
+    document.querySelector('a').addEventListener('click', () => {
+      gtag('event', 'click', {
+        'event_category': 'Hire Me',
+        'event_label': 'Hire Me Button'
+      });
+    });
   </script>
 </body>
 </html>

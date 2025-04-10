@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thesyntaxbard | Hire Me</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; background: #121212; color: #fff; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    .container { text-align: center; padding: 20px; max-width: 600px; }
+    h1 { font-size: 48px; margin-bottom: 20px; }
+    p { font-size: 20px; color: #ccc; margin-bottom: 30px; }
+    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 40px; }
+    .service { background: #1a1a1a; padding: 10px 20px; border-radius: 5px; font-size: 18px; }
+    a { background: #00b4d8; color: #121212; padding: 12px 24px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    a:hover { background: #fff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>thesyntaxbard</h1>
+    <p>Need a website fix, a landing page, or custom animations? I’m your dev.</p>
+    <div class="services">
+      <span class="service">Website Fixes - $25</span>
+      <span class="service">Landing Pages - $50</span>
+      <span class="service">Custom Animations - $35</span>
+    </div>
+    <a href="mailto:your-email@example.com">Hire Me Now</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      anime({
+        targets: '.container h1, .container p, .services, a',
+        opacity: [0, 1],
+        translateY: [30, 0],
+        duration: 800,
+        easing: 'easeOutQuad',
+        delay: anime.stagger(200)
+      });
+    });
+  </script>
+</body>
+</html>
